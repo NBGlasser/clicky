@@ -1,22 +1,23 @@
 import React, { Component } from "react";
-import Images from "../../../public/images"
+import Images from "/../../images"
 
 class ClickContainer extends Component {
 
     state = {
         images: [],
-        one: unclicked,
-        two: unclicked,
-        three: unclicked,
-        four: unclicked,
-        five: unclicked,
-        six: unclicked,
-        seven: unclicked,
-        eight: unclicked,
-        nine: unclicked,
-        ten: unclicked,
-        eleven: unclicked,
-        twelve: unclicked,
+        one: "unclicked",
+        two: "unclicked",
+        three: "unclicked",
+        four: "unclicked",
+        five: "unclicked",
+        six: "unclicked",
+        seven: "unclicked",
+        eight: "unclicked",
+        nine: "unclicked",
+        ten: "unclicked",
+        eleven: "unclicked",
+        twelve: "unclicked",
+        score: 0
     }
 
     componentDidMount() {
