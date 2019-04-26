@@ -53,8 +53,8 @@ class ClickContainer extends Component {
 
     }
 
-    handleBtnClick = event =>{
-        let id = event.currentTarget.id
+    handleBtnClick = event => {
+        let id = event.currentTarget.parent.img.src - "/assets/images/" - ".jpg"
         let arr = Object.values(this.state)
         this.check = this.check.bind(this)
         if (arr[id] === false) {
@@ -88,63 +88,61 @@ class ClickContainer extends Component {
                 </div>
 
 
-                <div className="container">
-                    <div className="row">
-                        <div id="4" className="col-4">
-                            <img src={this.state.images[4]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="5" className="col-4">
-                            <img src={this.state.images[5]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="6" className="col-4">
-                            <img src={this.state.images[6]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
+
+                <div className="row">
+                    <div id="4" className="col-4">
+                        <img src={this.state.images[4]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="5" className="col-4">
+                        <img src={this.state.images[5]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="6" className="col-4">
+                        <img src={this.state.images[6]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
                     </div>
                 </div>
 
-                <div className="container">
-                    <div className="row">
-                        <div id="7" className="col-4">
-                            <img src={this.state.images[7]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="8" className="col-4">
-                            <img src={this.state.images[8]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="9" className="col-4">
-                            <img src={this.state.images[9]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
+
+
+                <div className="row">
+                    <div id="7" className="col-4">
+                        <img src={this.state.images[7]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="8" className="col-4">
+                        <img src={this.state.images[8]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="9" className="col-4">
+                        <img src={this.state.images[9]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
                     </div>
                 </div>
 
-                <div className="container">
-                    <div className="row">
-                        <div id="10" className="col-4">
-                            <img src={this.state.images[10]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="11" className="col-4">
-                            <img src={this.state.images[11]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
-                        <div id="12" className="col-4">
-                            <img src={this.state.images[0]} alt="img" />
-                            <br></br>
-                            <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
-                        </div>
+
+                <div className="row">
+                    <div id="10" className="col-4">
+                        <img src={this.state.images[10]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="11" className="col-4">
+                        <img src={this.state.images[11]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
+                    </div>
+                    <div id="12" className="col-4">
+                        <img src={this.state.images[0]} alt="img" />
+                        <br></br>
+                        <button handleBtnClick={this.handleBtnClick} onClick={this.shuffle}>click</button>
                     </div>
                 </div>
                 <h3>Score: {this.state.score}</h3>
